@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantStore - Mon Panier</title>
+    <link rel="icon" href="img/TREES.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PlantStore</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Catalogue</a></li>
+                <li><a href="panier.html" class="active">Panier</a></li>
+                <li><a href="commande.html" > Commande</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart-container">
+            <h2>Mon Panier d'Achat</h2>
+            
+            <!-- Dynamic elements will be inserted inside this div via JavaScript -->
+            <div id="cart-items">
+                <!-- Example of HTML structure for a product row -->
+                <div class="cart-item">
+                    <img src="img/planet.jpg" alt="Monstera Deliciosa" width="50">
+                    <div class="item-details">
+                        <h3>Monstera Deliciosa</h3>
+                        <p>Prix: 25 DT</p>
+                    </div>
+                    <div class="item-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <button class="btn-remove">Supprimer</button>
+                </div>
+            </div>
+
+            <!-- Totals Area -->
+            <div class="cart-summary">
+                <p>Sous-total : <span id="cart-subtotal">25</span> DT</p>
+                <p><strong>Total : <span id="cart-total">25</span> DT</strong></p>
+                <a href="commande.html" class="btn-checkout">Passer la commande</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PlantStore. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
